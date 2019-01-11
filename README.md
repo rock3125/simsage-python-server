@@ -14,9 +14,9 @@ visit https://simsage.nz/api.html for more details.
 
 ```
 # replace these three IDs in server.py before starting!
-securityId = " ??? "
-organisationId = " ??? "
-kbId = " ??? "
+securityId = "?"
+organisationId = "?"
+kbId = "?"
 ```
 
 ## run/serve using gunicorn on port 9000
