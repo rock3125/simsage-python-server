@@ -25,6 +25,10 @@ securityId = "?"
 organisationId = "?"
 kbId = "?"
 
+# double check values are set before execution
+if securityId == "?":
+    raise ValueError("you have not setup your keys, please visit https://simsage.nz/api.html first!")
+
 # setup FLASK endpoint, allow CORS
 app = Flask(__name__)
 CORS(app, resources={r"/query/*": {"origins": "*"}})
